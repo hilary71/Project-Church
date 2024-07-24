@@ -1,0 +1,50 @@
+body {
+    background-color: aqua;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.25em;
+   align-items: center;
+}
+
+li {
+
+    font-size: 16px;
+}
+.community li {
+list-style-type: none;
+display: inline;
+text-align: justify;
+
+
+}
+.community a {
+    text-decoration: none;
+    margin: 20px;
+    padding-bottom: 7.5px;
+
+
+}
+
+p {
+
+    font-size: 16px;
+}
+.community a:visited {
+    color: blue;
+}
+.community {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    
+    
+}
+.community li a:hover {
+background-color: blue;
+color: red;
+transition: 1.2s;
+padding-right: 10px;
+padding-left: 10px;
+border-radius: 5px;
+text-shadow: 1px 1px green;
+
+}

@@ -1,0 +1,96 @@
+body{
+background-color: aqua;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+overflow: auto;
+
+}
+
+.lists {
+
+  background-color: brown;
+  border: 2px solid red;
+  border-radius: 10px;
+
+}
+
+.lists ul li {
+  list-style-type: none;
+  display: inline;
+  float: right;
+}
+.lists ul li a {
+color: black;
+ padding-right: 30px;
+ font-size: 1.5em;
+ 
+
+}
+
+
+.lists li:first-child{
+  padding-right: 40px;
+}
+.lists ul li a:hover {
+  border-width: 40px;
+  border: 1px solid blue;
+  padding-right: 20px;
+  padding-left: 20px;
+ background-color: aliceblue;
+ border-radius: 10px;
+ transition: 1s;
+ text-shadow: 2px 2px blue;
+ position: relative;
+ 
+
+}
+.main-content {
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 35%;
+text-align: center;
+padding-top: 50px;
+height: 300px;
+font-size: 1.5rem;
+border-radius: 2%;
+box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+background-color: antiquewhite;
+}
+
+
+  #user-name, #password {
+color: darkcyan;
+font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  button {
+    color: blueviolet;
+    box-sizing: 20px 30px;
+    width: 70px;
+    align-items: center;
+    cursor: pointer;
+  }
+  input {
+width: auto;
+height: fit-content;
+cursor: auto;
+color: black;
+
+  }
+
+  p, a {
+font-family: 'Times New Roman', Times, serif;
+text-decoration: none;
+font-size: 16px;}
+
+input:hover {
+    color:brown;
+}
+input::placeholder {
+
+    color: grey;
+}
+.subart {
+
+  line-height: 1.5;
+}
