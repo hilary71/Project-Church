@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US" class="wide wow-animation scrollTo">
+  <head>
+    <title>Donate</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="The Catholic Diocese of Kigoma" />
+
+    <link
+      type="image/x-icon"
+      href="images/cropped-cathedralfront-32x32.jpg"
+      rel="icon"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/activeform.min.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/select2-addl.min.css" rel="stylesheet" />
+    <link href="css/select2-krajee-bs5.min.css" rel="stylesheet" />
+    <link href="css/kv-widgets.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/bootstrap_1.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/datatables.min.css" rel="stylesheet" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+    <script>
+      window.s2options_02f500e1 = {
+        themeCss: ".select2-container--krajee-bs5",
+        sizeCss: " input-lg",
+        doReset: true,
+        doToggle: false,
+        doOrder: false,
+      };
+      window.select2_74237b0c = {
+        allowClear: true,
+        theme: "krajee-bs5",
+        width: "auto",
+        placeholder: "Search on Our Website",
+        language: "en-US",
+      };
+    </script>
+  </head>
+  <body style="background-color: #2f506c">
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page"> <div class="container">
+      <h2>Coming soon!</h2>
+      <h4>
+        Go back home please click
+        <a href="home.html"><span style="color: blue">here</span></a>
+      </h4>
+    </div>
+     
+</div>
+<!-- <div id="fb-root"></div> -->
+<script async="" defer="" crossorigin="anonymous" src="js/sdk.js#xfbml=1&amp;version=v10.0" nonce="ii8uYmS4"></script>
+<script src="js/jquery.js"></script>
+<script src="js/yii.js"></script>
+<script src="js/yii.activeForm.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/activeform.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/select2-krajee.min.js"></script>
+<script src="js/kv-widgets.min.js"></script>
+<script src="js/yii.validation.js"></script>
+<script src="js/core.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script>jQuery(function ($) {
+
+$(function() {
+  const progressCircle = document.querySelector(".autoplay-progress svg");
+  const progressContent = document.querySelector(".autoplay-progress span");
+  var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+      delay: 6000,
+      disableOnInteraction: false
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+          clickable: true
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+      },
+      on: {
+          autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = Math.ceil(time / 100);
+          }
+      }
+  });
+}); 
+ 
+var $el=jQuery("#w0 .kv-hint-special");if($el.length){$el.each(function(){$(this).activeFieldHint()});}kvBs4InitForm();
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+if (jQuery('#shared-programme_id').data('select2')) { jQuery('#shared-programme_id').select2('destroy'); }
+jQuery.when(jQuery('#shared-programme_id').select2(select2_74237b0c)).done(initS2Loading('shared-programme_id','s2options_02f500e1'));
+
+
+});</script>
+
+</body></html>
+
