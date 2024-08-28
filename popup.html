@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-US" class="wide wow-animation scrollTo">
+  <head>
+    <title>Donation Account</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="The Catholic Diocese of Kigoma" />
+
+    <link
+      type="image/x-icon"
+      href="images/cropped-logojimbo.png"
+      rel="icon"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/activeform.min.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/select2-addl.min.css" rel="stylesheet" />
+    <link href="css/select2-krajee-bs5.min.css" rel="stylesheet" />
+    <link href="css/kv-widgets.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/popup.css">
+    <link href="css/bootstrap_1.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/datatables.min.css" rel="stylesheet" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+
+    <style type="text/css" id="form-designer-style">
+      /* Injected CSS Code */
+  
+        
+        
+        
+        
+        
+    /*PREFERENCES STYLE*/
+    /* NEW THEME STYLE */
+  
+    /* colors */
+  
+    .form-textbox, .form-textarea {
+      color: undefined;
+    }
+    .FITB-inptCont .form-textbox, .FITB-inptCont .form-dropdown,
+    span.FITB-inptCont[data-type=selectbox] select,
+    span.FITB-inptCont[data-type=timebox] select {
+      color: #2C3345;
+    }
+    .rating-item input:hover+label {
+      color: #2e69ff;
+    }
+    li[data-type=control_fileupload] .qq-upload-button,
+    .until-text,
+    .form-submit-reset {
+      color: #2c3345;
+    }
+  
+    .stageEmpty,
+    .btn-barebone,
+    .formPage-stuff,
+    .scrollToTop .scrollToTop-text {
+      color: #6F76A7;
+    }
+    .scrollToTop svg {
+      fill: #6F76A7;
+    }
+    .rating-item label {
+      color: #b8bdc9;
+    }
+    .currentDate,
+    .pickerItem select,
+    .appointmentCalendar .calendarDay,
+    .calendar.popup th,
+    .calendar.popup table tbody td,
+    .calendar-new-header>*,
+    .form-collapse-table {
+      color: #2C3345;
+    }
+    .appointmentCalendar .dayOfWeek {
+      color: #2e69ff;
+    }
+    .appointmentSlotsContainer > * {
+      color: #2e69ff;
+    }
+    li[data-type=control_fileupload] .jfUpload-heading,
+    ::placeholder,
+    .form-dropdown.is-active,
+    .form-dropdown:first-child,
+    .form-spinner-input {
+      color: #57647e;
+    }
+    .appointmentCalendar .calendarWeek .calendarDay.isUnavailable,
+    .calendar tr.days td.otherDay,
+    .calendar tr.days td:hover:not(.unselectable) {
+      color: #CAD0CF;
+    }
+    span.form-sub-label, label.form-sub-label, div.form-header-group .form-subHeader,
+    .rating-item-title.for-to > label:first-child,
+    .rating-item-title.for-from > label:first-child,
+    .rating-item-title .editor-container * {
+      color: #57647E;
+    }
+    .form-pagebreak-back{
+      color: #2c3345;
+    }
+    .rating-item input:checked+label,
+    .rating-item input:focus+label {
+      color: #FFFFFF;
+    }
+    .clear-pad-btn {
+      color: #57647e;
+    }
+    .form-textbox::placeholder,
+    .form-dropdown:not(.time-dropdown):not(:required),
+    .form-dropdown:not(:required),
+    .form-dropdown:required:invalid {
+      color: #57647e;
+    }
+    /* border-colors */
+    .form-dropdown,
+    .form-textarea,
+    .form-textbox,
+    li[data-type=control_fileupload] .qq-upload-button,
+    .rating-item label,
+    .rating-item input:focus+label,
+    .rating-item input:checked+label,
+    .jf-form-buttons,
+    .form-checkbox+label:before, .form-checkbox+span:before, .form-radio+label:before, .form-radio+span:before,
+    .signature-pad-passive,
+    .signature-wrapper,
+    .appointmentCalendarContainer,
+    .appointmentField .timezonePickerName,
+    .appointmentDayPickerButton,
+    .appointmentCalendarContainer .monthYearPicker .pickerItem+.pickerItem,
+    .appointmentCalendarContainer .monthYearPicker,
+    .appointmentCalendar .calendarDay.isActive .calendarDayEach, .appointmentCalendar .calendarDay.isToday .calendarDayEach, .appointmentCalendar .calendarDay:not(.empty):hover .calendarDayEach,
+    .calendar.popup:before,
+    .calendar-new-month,
+    .form-matrix-column-headers, .form-matrix-table td, .form-matrix-table td:last-child,
+    .form-matrix-table th, .form-matrix-table th:last-child, .form-matrix-table tr:last-child td, .form-matrix-table tr:last-child th, .form-matrix-table tr:not([role=group])+tr[role=group] th,
+    .form-matrix-headers.form-matrix-column-headers,
+    .isSelected .form-matrix-column-headers:nth-last-of-type(2),
+    li[data-type=control_inline] input[type=email], li[data-type=control_inline] input[type=number],
+    li[data-type=control_inline] input[type=tel], li[data-type=control_inline] input[type=text] {
+      border-color: #b8bdc9;
+    }
+    .stageEmpty,
+    .form-page-break:before,
+    .welcome-page-break:before,
+    .thankyou-page-break:before,
+    .form-cover-break:before,
+    .form-page-break:after,
+    .welcome-page-break:after,
+    .thankyou-page-break:after,
+    .form-cover-break:after {
+      border-color: #C8CEED;
+    }
+  
+    .rating-item input:hover+label {
+      border-color: #2e69ff;
+    }
+    .appointmentSlot,
+    .form-checkbox:checked+label:before, .form-checkbox:checked+span:before, .form-checkbox:checked+span label:before,
+    .form-radio:checked+label:before, .form-radio:checked+span:before,
+    .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .signature-wrapper:focus,
+    .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+    .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .signature-wrapper:hover {
+      border-color: #2e69ff;
+    }
+  
+    .calendar tr.days td:hover:not(.unselectable):after {
+      border-color: #e5eaf4;
+    }
+    .form-header-group,
+    .form-buttons-wrapper, .form-pagebreak, .form-submit-clear-wrapper,
+    .form-pagebreak-next,
+    .form-pagebreak-back,
+    .form-checkbox:hover+label:before, .form-checkbox:hover+span:before, .form-radio:hover+label:before, .form-radio:hover+span:before,
+    .divider {
+      border-color: #F3F3FE;
+    }
+    .form-pagebreak-back:focus, .form-pagebreak-next:focus, .form-submit-button:focus {
+      border-color: rgba(46, 105, 255, 1);
+    }
+    /* background-colors */
+    .form-line-active {
+      background-color: #F1F5FF;
+    }
+    .stageEmpty {
+      background-color:  #F3F3FE;
+    }
+    .form-line-error {
+      background-color: #FFD6D6;
+    }
+    .form-matrix-column-headers, .form-matrix-row-headers,
+    .form-spinner-button-container>*,
+    .form-collapse-table,
+    .form-collapse-table:hover,
+    .appointmentDayPickerButton {
+      background-color: #e5eaf4;
+    }
+    .calendar.popup, .calendar.popup table,
+    .calendar.popup table tbody td:after{
+      background-color: #FFFFFF;
+    }
+  
+    .appointmentCalendar .calendarDay.isActive .calendarDayEach,
+    .appointmentFieldRow.forSelectedDate,
+    .calendar.popup tr.days td.selected:after,
+    .calendar.popup:after,
+    .submit-button,
+    .form-checkbox:checked+label:before, .form-checkbox:checked+span:before, .form-checkbox:checked+span label:before,
+    .form-radio+label:after, .form-radio+span:after,
+    .rating-item input:checked+label,
+    .appointmentCalendar .calendarDay:after,
+    .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+    .rating-item input:focus+label,
+    .formPage-removePage:hover,
+    .btn-barebone:hover, .btn-barebone:active {
+      background-color: #2e69ff;
+    }
+    .appointmentSlot.active {
+      background-color: #2e69ff !important;
+    }
+    .clear-pad-btn,
+    .appointmentCalendar .dayOfWeek,
+    .calendar.popup th {
+      background-color: #eef3ff !important;
+    }
+    .appointmentField .timezonePicker:hover+.timezonePickerName,
+    .form-spinner-button-container>*:hover {
+      background-color: #eef3ff;
+    }
+    .form-matrix-values,
+    .form-matrix-values,
+    .signature-wrapper,
+    .signature-pad-passive,
+    .rating-item label,
+    .form-checkbox+label:before, .form-checkbox+span:before,
+    .form-radio+label:before, .form-radio+span:before {
+      background-color: #FFFFFF;
+    }
+    li[data-type=control_fileupload] .qq-upload-button {
+      background-color: #fbfcff;
+    }
+    .JotFormBuilder .appContainer #app li.form-line[data-type=control_matrix].isSelected
+    .questionLine-editButton.forRemove:after,
+    .JotFormBuilder .appContainer #app li.form-line[data-type=control_matrix].isSelected .questionLine-editButton.forRemove:before {
+      background-color: #FFFFFF;
+    }
+    .appointmentCalendarContainer, .appointmentSlot,
+    .rating-item-title.for-to > label:first-child,
+    .rating-item-title.for-from > label:first-child,
+    .rating-item-title .editor-container *,
+    .calendar-opened {
+      background-color: transparent;
+    }
+    .page-section li.form-line-active[data-type="control_button"] {
+      background-color: #F1F5FF;
+    }
+    .appointmentCalendar .calendarDay.isSelected:after {
+      color: #FFFFFF;
+    }
+    /* shadow */
+    .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .signature-wrapper:hover,
+    .calendar.popup:before,
+    .jSignature:hover,
+    li[data-type=control_fileupload] .qq-upload-button-hover,
+    .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+    .form-line[data-payment="true"] .form-product-item .p_checkbox:hover .select_border,
+    .form-checkbox:hover+label:before, .form-checkbox:hover+span:before, .form-radio:hover+label:before, .form-radio:hover+span:before,
+    .calendar.popup:before {
+      border-color: rgba(46, 105, 255, 0.5);
+      box-shadow: 0 0 0 2px rgba(46, 105, 255, 0.25);
+    }
+    .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .signature-wrapper:focus,
+    li[data-type=control_fileupload] .qq-upload-button-focus,
+    .form-checkbox:focus+label:before, .form-checkbox:focus+span:before, .form-radio:focus+label:before, .form-radio:focus+span:before,
+    .calendar.popup:before {
+      border-color: rgba(46, 105, 255, 1);
+      box-shadow: 0 0 0 3px rgba(46, 105, 255, 0.25);
+    }
+    .calendar.popup table tbody td{
+      box-shadow: none;
+    }
+  
+    /* button colors */
+    .submit-button {
+      background-color: #18BD5B;
+      border-color: #18BD5B;
+    }
+    .submit-button:hover {
+      background-color: #16AA52;
+      border-color: #16AA52;
+    }
+    .form-pagebreak-next {
+      background-color: #2e69ff;
+    }
+    .form-pagebreak-back {
+      background-color: #e5e7f2;
+    }
+    .form-pagebreak-back:hover {
+      background-color: #CED0DA;
+      border-color: #CED0DA;
+    }
+    .form-pagebreak-next:hover {
+      background-color: #2554CC;
+      border-color: #2554CC;
+    }
+    .form-sacl-button, .form-submit-print {
+      background-color: transparent;
+      color: #2c3345;
+      border-color: #b8bdc9;
+    }
+    .form-sacl-button:hover, .form-submit-print:hover,
+    .appointmentSlot:not(.disabled):not(.active):hover,
+    .appointmentDayPickerButton:hover,
+    .rating-item input:hover+label {
+      background-color: #96B4FF;
+    }
+  
+    /* payment styles */
+  
+    .form-line[data-payment=true] .form-textbox,
+    .form-line[data-payment=true] .select-area,
+    .form-line[data-payment=true] #coupon-input,
+    .form-line[data-payment=true] #coupon-container input,
+    .form-line[data-payment=true] input#productSearch-input,
+    .form-line[data-payment=true] .form-product-category-item:after,
+    .form-line[data-payment=true] .filter-container .dropdown-container .select-content,
+    .form-line[data-payment=true] .form-textbox.form-product-custom_quantity,
+    .form-line[data-payment="true"] .form-product-item .p_checkbox .select_border,
+    .form-line[data-payment="true"] .form-product-item .form-product-container .form-sub-label-container span.select_cont,
+    .form-line[data-payment=true] select.form-dropdown,
+    .form-line[data-payment=true] #payment-category-dropdown .select-area,
+    .form-line[data-payment=true] #payment-sorting-products-dropdown .select-area,
+    .form-line[data-payment=true] .dropdown-container .select-content {
+      border-color: #b8bdc9;
+      border-color: undefined;
+    }
+    .form-line[data-payment="true"] hr,
+    .form-line[data-payment=true] .p_item_separator,
+    .form-line[data-payment="true"] .payment_footer.new_ui,
+    .form-line.card-3col .form-product-item.new_ui,
+    .form-line.card-2col .form-product-item.new_ui {
+      border-color: #b8bdc9;
+      border-color: undefined;
+    }
+    .form-line[data-payment=true] .form-product-category-item {
+      border-color: #b8bdc9;
+      border-color: undefined;
+    }
+    .form-line[data-payment=true] #coupon-input,
+    .form-line[data-payment=true] .form-textbox.form-product-custom_quantity,
+    .form-line[data-payment=true] input#productSearch-input,
+    .form-line[data-payment=true] .select-area,
+    .form-line[data-payment=true] .custom_quantity,
+    .form-line[data-payment=true] .filter-container .select-content,
+    .form-line[data-payment=true] .p_checkbox .select_border,
+    .form-line[data-payment=true] #payment-category-dropdown .select-area,
+    .form-line[data-payment=true] #payment-sorting-products-dropdown .select-area,
+    .form-line[data-payment=true] .dropdown-container .select-content {
+      background-color: #FFFFFF;
+    }
+    .form-line[data-payment=true] .form-product-category-item.title_collapsed.has_selected_product .selected-items-icon {
+     background-color: undefined;
+     border-color: undefined;
+    }
+    .form-line[data-payment=true].form-line.card-3col .form-product-item,
+    .form-line[data-payment=true].form-line.card-2col .form-product-item {
+     background-color: undefined;
+    }
+    .form-line[data-payment=true] .payment-form-table input.form-textbox,
+    .form-line[data-payment=true] .payment-form-table input.form-dropdown,
+    .form-line[data-payment=true] .payment-form-table .form-sub-label-container > div,
+    .form-line[data-payment=true] .payment-form-table span.form-sub-label-container iframe,
+    .form-line[data-type=control_square] .payment-form-table span.form-sub-label-container iframe {
+      border-color: #b8bdc9;
+    }
+    .FITB:not(.formRender) .qb-datebox input:not([data-labelid]), .FITB:not(.formRender) .qb-selectbox input:not([data-labelid]),
+    .FITB:not(.formRender) .qb-signaturebox input:not([data-labelid]), .FITB:not(.formRender) .qb-textbox input:not([data-labelid]),
+    .FITB:not(.formRender) .qb-timebox input:not([data-labelid]), span.FITB-inptCont[data-type=datebox] label,
+    span.FITB-inptCont[data-type=signaturebox] label, span.FITB-inptCont[data-type=textbox] label, span.FITB-inptCont[data-type=timebox] label,
+    span.FITB-inptCont[data-type=datebox] input:focus~label, span.FITB-inptCont[data-type=datebox] input:valid~label,
+    span.FITB-inptCont[data-type=signaturebox] input:focus~label, span.FITB-inptCont[data-type=signaturebox] input:valid~label,
+    span.FITB-inptCont[data-type=textbox] input:focus~label, span.FITB-inptCont[data-type=textbox] input:valid~label,
+    span.FITB-inptCont[data-type=timebox] input:focus~label, span.FITB-inptCont[data-type=timebox] input:valid~label {
+      color: #57647e;
+    }
+  
+    /* NEW THEME STYLE */
+    /*PREFERENCES STYLE*/
+    /*PREFERENCES STYLE*/
+      .form-all {
+        font-family: Inter, sans-serif;
+      }
+      .form-all .qq-upload-button,
+      .form-all .form-submit-button,
+      .form-all .form-submit-reset,
+      .form-all .form-submit-print {
+        font-family: Inter, sans-serif;
+      }
+      .form-all .form-pagebreak-back-container,
+      .form-all .form-pagebreak-next-container {
+        font-family: Inter, sans-serif;
+      }
+      .form-header-group {
+        font-family: Inter, sans-serif;
+      }
+      .form-label {
+        font-family: Inter, sans-serif;
+      }
+    
+      .form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
+    
+      .form-line {
+        margin-top: 12px 36px 12px 36px px;
+        margin-bottom: 12px 36px 12px 36px px;
+      }
+    
+      .form-all {
+        max-width: 752px;
+        width: 100%;
+      }
+    
+      .form-label.form-label-left,
+      .form-label.form-label-right,
+      .form-label.form-label-left.form-label-auto,
+      .form-label.form-label-right.form-label-auto {
+        width: 230px;
+      }
+    
+      .form-all {
+        font-size: 16px
+      }
+      .form-all .qq-upload-button,
+      .form-all .qq-upload-button,
+      .form-all .form-submit-button,
+      .form-all .form-submit-reset,
+      .form-all .form-submit-print {
+        font-size: 16px
+      }
+      .form-all .form-pagebreak-back-container,
+      .form-all .form-pagebreak-next-container {
+        font-size: 16px
+      }
+    
+      .supernova {
+        background-color: #F3F3FE;
+      }
+      .supernova body {
+        background: transparent;
+      }
+    
+      .supernova .form-all, .form-all {
+        background-color: #FFFFFF;
+      }
+    
+      .form-all {
+        color: #2C3345;
+      }
+      .form-header-group .form-header {
+        color: #2C3345;
+      }
+      .form-header-group .form-subHeader {
+        color: #2C3345;
+      }
+      .form-label-top,
+      .form-label-left,
+      .form-label-right,
+      .form-html,
+      .form-checkbox-item label,
+      .form-radio-item label,
+      span.FITB .qb-checkbox-label,
+      span.FITB .qb-radiobox-label,
+      span.FITB .form-radio label,
+      span.FITB .form-checkbox label,
+      [data-blotid][data-type=checkbox] [data-labelid],
+      [data-blotid][data-type=radiobox] [data-labelid],
+      span.FITB-inptCont[data-type=checkbox] label,
+      span.FITB-inptCont[data-type=radiobox] label {
+        color: #2C3345;
+      }
+      .form-sub-label {
+        color: #464d5f;
+      }
+    
+      .form-textbox,
+      .form-textarea,
+      .form-dropdown,
+      .form-radio-other-input,
+      .form-checkbox-other-input,
+      .form-captcha input,
+      .form-spinner input {
+        background-color: #FFFFFF;
+      }
+    
+      .form-line-error {
+        overflow: hidden;
+        transition: none;
+        background-color: #FFD6D6;
+      }
+  
+      .form-line-error .form-error-message {
+        background-color: #FF3200;
+        clear: both;
+        float: none;
+      }
+  
+      .form-line-error .form-error-arrow {
+        border-bottom-color: #FF3200;
+      }
+  
+      .form-line-error input:not(#coupon-input),
+      .form-line-error textarea,
+      .form-line-error .form-validation-error {
+        border: 1px solid #FF3200;
+        .box-shadow(0 0 3px #FF3200);
+      }
+     
+      .supernova {
+        background-image: none;
+      }
+      #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    
+    .ie-8 .form-all:before { display: none; }
+    .ie-8 {
+      margin-top: auto;
+      margin-top: initial;
+    }
+    
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+      /* Injected CSS Code */
+  </style>
+  
+  <script src="js/prototype.forms.js" type="text/javascript"></script>
+  <script src="js/jotform.forms.js" type="text/javascript"></script>
+  <script src="js/punycode-1.4.1.min.js" type="text/javascript" defer=""></script>
+  <script src="js/maskedinput_5.0.9.min.js" type="text/javascript"></script>
+  <script src="js/stripeSCA.js" type="text/javascript"></script>
+  <script src="js/paymentUtils.js" type="text/javascript"></script>
+  <script src="js/validategateways.js" type="text/javascript"></script>
+  <script src="js/for-form-branding-footer.js" type="text/javascript" defer=""></script>
+  <script src="js/smoothscroll.min.js" type="text/javascript"></script>
+  <script src="js/errorNavigation.js" type="text/javascript"></script>
+  <script type="text/javascript">	
+    /*INIT-START*/
+        JotForm.setPhoneMaskingValidator( 'input_46_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+  if (window.JotForm && JotForm.accessible) $('input_49').setAttribute('tabindex',0);
+        JotForm.setStripeSettings('', 'none', '47', '45', '46', '0');
+        JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+    /*INIT-END*/
+    });
+  
+     setTimeout(function() {
+  JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"14","text":"Donation","type":"control_button"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"fullName","qid":"29","text":"Full Name","type":"control_fullname"},null,null,null,null,null,null,null,null,null,null,null,null,{"name":"donationAmount","qid":"42","text":"Donation Amount","type":"control_stripe"},null,{"name":"churchDonation","qid":"44","text":"Church Donation Form","type":"control_head"},{"name":"email","qid":"45","subLabel":"example@example.com","text":"Email","type":"control_email"},{"name":"phoneNumber","qid":"46","text":"Phone Number","type":"control_phone"},{"name":"address","qid":"47","text":"Address","type":"control_address"},{"name":"donationAllocation","qid":"48","text":"Donation Allocation","type":"control_checkbox"},{"mde":"No","name":"messageOf","qid":"49","text":"Message of Encouragement or Dedication","type":"control_textarea","wysiwyg":"Disable"},{"name":"contributorInformation","qid":"50","text":"Contributor Information","type":"control_head"},{"name":"donationDetails51","qid":"51","text":"Donation Details","type":"control_head"},{"name":"input52","qid":"52","text":"Thank you for your generous contribution. Your support helps us spread hope, compassion, and joy to our community and beyond. Together, we can make a difference and bring light into the lives of those in need.","type":"control_text"}]);}, 20); 
+  </script>
+  
+    <script>
+      window.s2options_02f500e1 = {
+        themeCss: ".select2-container--krajee-bs5",
+        sizeCss: " input-lg",
+        doReset: true,
+        doToggle: false,
+        doOrder: false,
+      };
+      window.select2_74237b0c = {
+        allowClear: true,
+        theme: "krajee-bs5",
+        width: "auto",
+        placeholder: "Search on Our Website",
+        language: "en-US",
+      };
+    </script>
+    <link type="text/css" rel="stylesheet" href="css/form-common.css">
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="css/5e6b428acc8c4e222d1beb91.css">
+<link type="text/css" rel="stylesheet" href="css/payment_styles.css">
+<link type="text/css" rel="stylesheet" href="css/payment_feature.css">
+
+<body>
+
+    <header>
+
+
+  
+
+  <!-- The form -->
+   <div class="container">
+    <div class="div row">
+      <div class="div col-md-12">
+        <div class="form-popup" id="myForm">
+           
+          <form action="" class="form-container">
+            
+            <h3 class="text-center">Donation Accounts</h3>
+            <h4>Choose Vandor</h4>
+            <div class="row">
+              <h6>Mobile Network</h6>
+
+              <div class="col-md-6">
+            
+                  <div class="card">
+                    <img class="card-img-top" src="images/airtel-money-tanzania-seeklogo.png" style="width: 100px;" alt="avatar">
+                    <div class="card-body">
+                     <h5 class="card-title text-bold" style="font-size: 15px;">
+                    
+                          &nbsp; Phone Number: +255......
+                      </h5>
+                      <p>
+                       &nbsp; Name: ..............</p>
+                       </div>
+                      
+                      
+                
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/halo-pesa-tanzania-seeklogo.png" style="width:50px" alt="avatar">
+                    <div class="card-body">
+                     <h5 class="card-title text-bold" style="font-size: 15px;">
+                    
+                          &nbsp; Phone Number:+255...........               
+                      </h5>
+                      <hp> &nbsp; Name: ..............</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/tigo-pesa-tanzania-seeklogo.png" style="width:70px" alt="avatar">
+                    <div class="card-body">
+                     <h5 class="card-title text-bold" style="font-size: 15px;">
+                      <h5 class="card-title text-bold" style="font-size: 15px;">
+                    
+                        &nbsp; Phone Number:+255...........               
+                    </h5>
+                    <p> &nbsp; Name: ..............</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/tigo-pesa-tanzania-seeklogo.png" style="width:70px" alt="avatar">
+                    <div class="card-body">
+                     <h6 class="card-title text-bold" style="font-size: 15px;">
+                      &nbsp; Phone Number:+255...........               
+                    </h6>
+                    <p> &nbsp; Name: ..............</p>
+                    </div>
+                    </div>
+                  </div>
+              
+                
+
+
+
+
+              </div>
+              <br>
+             
+              <div class="row">
+
+                <h6>Banking Network</h6>
+                
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/nmb-bank-seeklogo.png" style="width:70px" alt="avatar">
+                    <div class="card-body">
+                      <h6 class="card-title text-bold" style="font-size: 15px;">
+                        &nbsp; ACC No...........               
+                      </h6>
+                      <p> &nbsp; Name: ..............</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/nbc-bank-seeklogo.png" style="width:70px" alt="avatar">
+                    <div class="card-body">
+                      <h6 class="card-title text-bold" style="font-size: 15px;">
+                        &nbsp; ACC No:...........               
+                      </h6>
+                      <p> &nbsp; Name: ..............</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="col-md-12 text-center">
+                <h4>Thank you for your generous contribution!</h4>
+
+               <h4><a href="index.html" style="color: blue;">go back home</a></h4> 
+               
+
+              </div>
+
+
+
+            </div>
+        
+          </form>
+        </div>
+      </div>
+
+    </header>
+    
+
+</body></html>
+
